@@ -14,20 +14,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 2. Mobile Burger Menu
+  // 2. Mobile Burger Menu & Drawer
   const burgerBtn = document.getElementById('burgerBtn');
-  const navLinks = document.querySelector('.nav-links');
-  if (burgerBtn && navLinks) {
-    burgerBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
+  const navLinks = document.getElementById('navLinks');
+  const navBackdrop = document.getElementById('navBackdrop');
+  const navCloseBtn = document.getElementById('navCloseBtn');
 
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-      });
-    });
-  }
+  const openMobileMenu = () => {
+    if (navLinks) navLinks.classList.add('active');
+    if (navBackdrop) navBackdrop.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeMobileMenu = () => {
+    if (navLinks) navLinks.classList.remove('active');
+    if (navBackdrop) navBackdrop.classList.remove('active');
+    document.body.style.overflow = '';
+  };
+
+  if (burgerBtn) burgerBtn.addEventListener('click', openMobileMenu);
+  if (navCloseBtn) navCloseBtn.addEventListener('click', closeMobileMenu);
+  if (navBackdrop) navBackdrop.addEventListener('click', closeMobileMenu);
+
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
 
   // 3. Services Tabs Filter
   const serviceTabs = document.querySelectorAll('.tab-btn');
