@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Барбершоп «ОСТРЯК» | Сеть мужских парикмахерских в Ижевске (6 филиалов)</title>
+  <meta name="description" content="Сеть барбершопов «Остряк» в Ижевске. 6 удобных филиалов по городу. Премиальные мужские стрижки, моделирование бороды, королевское бритье. Скидка 20% на первый визит!">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- Ambient Light & Noise Filter -->
+  <div class="ambient-glow"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- ==========================================================================
+       HEADER
+       ========================================================================== -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#hero" class="logo">
+        <img src="assets/images/logo.png" alt="Остряк Барбершоп Логотип" class="logo-img">
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#branches" class="nav-link">Филиалы (6)</a></li>
+        <li><a href="#services" class="nav-link">Услуги и Прайс</a></li>
+        <li><a href="#promos" class="nav-link">Акции</a></li>
+        <li><a href="#masters" class="nav-link">Мастера</a></li>
+        <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+        <li><a href="#interior" class="nav-link">Интерьер</a></li>
+        <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+        <li><a href="#contacts" class="nav-link">Контакты</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <div class="header-status">
+          <span class="status-dot"></span>
+          <span>Ижевск • 6 филиалов</span>
+        </div>
+        <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Онлайн-запись</a>
+        <button class="burger-btn" id="burgerBtn" aria-label="Открыть меню">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-row" style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
+            <div class="section-tag" style="margin-bottom: 0;">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span>Сеть барбершопов в Ижевске</span>
+            </div>
+            <span style="font-size: 0.88rem; color: #fb923c; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+              <span>⚡</span> -20% новым клиентам
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Острый стиль.<br>
+            <span class="gold-gradient-text">Мужской характер.</span>
+          </h1>
+
+          <p class="hero-desc">
+            Идеальная геометрия мужских стрижек, точное моделирование бороды и королевское бритье. 6 атмосферных филиалов в Ижевске с крафтовым баром и сервисом без компромиссов.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+              <span>Записаться онлайн (Yclients)</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#branches" class="btn btn-outline btn-lg">
+              <span>Выбрать филиал</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h4>6 филиалов</h4>
+              <p>По всему Ижевску</p>
+            </div>
+            <div class="stat-item">
+              <h4>15 000+</h4>
+              <p>Довольных клиентов</p>
+            </div>
+            <div class="stat-item">
+              <h4>4.9 ★</h4>
+              <p>Яндекс Карты & 2ГИС</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-main">
+            <div class="hero-img-wrapper">
+              <img src="assets/images/barber_volkov.jpg" alt="Шеф-барбер Александр Волков">
+            </div>
+            <div class="hero-floating-badge">
+              <div class="floating-text">
+                <h5>Александр «Razor» Волков</h5>
+                <p>Шеф-барбер сети «Остряк» • Опыт 9 лет</p>
+              </div>
+              <div class="rating-pill">
+                <span>★ 5.0</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BRANCHES / 6 ФИЛИАЛОВ В ИЖЕВСКЕ
+       ========================================================================== -->
+  <section id="branches" style="background: rgba(16, 21, 34, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Филиалы</div>
+        <h2 class="section-title">6 филиалов «Остряк» в Ижевске</h2>
+        <p class="section-subtitle">Выберите удобный барбершоп рядом с вашим домом или работой</p>
+      </div>
+
+      <div class="branches-grid">
+        <!-- Branch 1 -->
+        <div class="branch-card">
+          <div>
+            <span class="branch-num-tag">Филиал 1</span>
+            <h3>ул. Петрова, д. 5</h3>
+            <div class="branch-details">
+              <div class="branch-detail-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>ТРК «Петровский» / Устиновский р-н</span>
+              </div>
+              <div class="branch-detail-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Ежедневно с 10:00 до 21:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="branch-actions">
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="width: 100%;">Записаться в этот филиал</a>
+          </div>
+        </div>
+
+        <!-- Branch 2 -->
+        <div class="branch-card">
+          <div>
+            <span class="branch-num-tag">Филиал 2</span>
+            <h3>ул. Василия Тарасова, д. 1</h3>
+            <div class="branch-details">
+              <div class="branch-detail-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>ЖК «Европейский» / Октябрьский р-н</span>
+              </div>
+              <div class="branch-detail-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Ежедневно с 10:00 до 21:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="branch-actions">
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="width: 100%;">Записаться в этот филиал</a>
+          </div>
+        </div>
+
+        <!-- Branch 3 -->
+        <div class="branch-card">
+          <div>
+            <span class="branch-num-tag">Филиал 3</span>
+            <h3>ул. Максима Горького, д. 183</h3>
+            <div class="branch-details">
+              <div class="branch-detail-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Центральный район / Октябрьский р-н</span>
+              </div>
+              <div class="branch-detail-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Ежедневно с 10:00 до 21:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="branch-actions">
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="width: 100%;">Записаться в этот филиал</a>
+          </div>
+        </div>
+
+        <!-- Branch 4 -->
+        <div class="branch-card">
+          <div>
+            <span class="branch-num-tag">Филиал 4</span>
+            <h3>ул. Молодёжная, д. 56А</h3>
+            <div class="branch-details">
+              <div class="branch-detail-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Устиновский / Первомайский р-н</span>
+              </div>
+              <div class="branch-detail-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Ежедневно с 10:00 до 21:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="branch-actions">
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="width: 100%;">Записаться в этот филиал</a>
+          </div>
+        </div>
+
+        <!-- Branch 5 -->
+        <div class="branch-card">
+          <div>
+            <span class="branch-num-tag">Филиал 5</span>
+            <h3>ул. Пушкинская, д. 279А</h3>
+            <div class="branch-details">
+              <div class="branch-detail-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Рядом с Центральной площадью</span>
+              </div>
+              <div class="branch-detail-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Ежедневно с 10:00 до 21:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="branch-actions">
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="width: 100%;">Записаться в этот филиал</a>
+          </div>
+        </div>
+
+        <!-- Branch 6 -->
+        <div class="branch-card">
+          <div>
+            <span class="branch-num-tag">Филиал 6</span>
+            <h3>ул. Пушкинская, д. 169</h3>
+            <div class="branch-details">
+              <div class="branch-detail-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Центр Ижевска / Первомайский р-н</span>
+              </div>
+              <div class="branch-detail-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>Ежедневно с 10:00 до 21:00</span>
+              </div>
+            </div>
+          </div>
+          <div class="branch-actions">
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="width: 100%;">Записаться в этот филиал</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROMOTIONS / SPECIAL OFFERS
+       ========================================================================== -->
+  <section id="promos">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Спецпредложения</div>
+        <h2 class="section-title">Акции для новых и постоянных гостей</h2>
+        <p class="section-subtitle">Попробуйте премиальный уход «Остряк» в Ижевске на специальных условиях</p>
+      </div>
+
+      <div class="promo-grid">
+        <!-- Promo 1 -->
+        <div class="promo-card featured">
+          <span class="promo-badge-tag">ХИТ</span>
+          <div>
+            <div class="promo-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+            </div>
+            <h3>-20% на первый визит</h3>
+            <p>Специальная скидка на любую стрижку или комплекс во всех 6 филиалах Ижевска.</p>
+          </div>
+          <div>
+            <div class="promo-code-box">
+              <span class="promo-code-text">FIRST20</span>
+              <button class="promo-copy-btn" onclick="copyPromo('FIRST20')">Применить →</button>
+            </div>
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">Записаться со скидкой</a>
+          </div>
+        </div>
+
+        <!-- Promo 2 -->
+        <div class="promo-card">
+          <span class="promo-badge-tag" style="background: #3b82f6;">ВЫГОДА 30%</span>
+          <div>
+            <div class="promo-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3>Стрижка + Борода</h3>
+            <p>Комплексный уход: стрижка ножницами и машинкой + моделирование бороды с распариванием.</p>
+          </div>
+          <div>
+            <div class="service-price" style="margin-bottom: 16px;">2 200 ₽ <span style="font-size: 0.9rem; text-decoration: line-through; color: var(--text-muted);">2 600 ₽</span></div>
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">Записаться на комбо</a>
+          </div>
+        </div>
+
+        <!-- Promo 3 -->
+        <div class="promo-card">
+          <div>
+            <div class="promo-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3>Отец + Сын</h3>
+            <p>Мужская традиция. Одновременная стрижка для отца и сына у топовых мастеров сети.</p>
+          </div>
+          <div>
+            <div class="service-price" style="margin-bottom: 16px;">2 300 ₽ <span style="font-size: 0.9rem; text-decoration: line-through; color: var(--text-muted);">2 800 ₽</span></div>
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">Выбрать тариф</a>
+          </div>
+        </div>
+
+        <!-- Promo 4 -->
+        <div class="promo-card">
+          <div>
+            <div class="promo-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+            </div>
+            <h3>Барбер-Бар в подарок</h3>
+            <p>Зерновой эспрессо, чай, виски или крафтовый лимонад бесплатно для каждого гостя во время визита.</p>
+          </div>
+          <div>
+            <span style="display: block; color: var(--accent-gold); font-weight: 700; margin-bottom: 16px;">Бесплатно для всех гостей</span>
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">Забронировать визит</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SERVICES & PRICE LIST
+       ========================================================================== -->
+  <section id="services" style="background: rgba(16, 21, 34, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Прайс-лист</div>
+        <h2 class="section-title">Услуги барбершопа</h2>
+        <p class="section-subtitle">Фиксированные цены, премиальная косметика и мастерство без компромиссов</p>
+      </div>
+
+      <div class="services-tabs">
+        <button class="tab-btn active" data-category="all">Все услуги</button>
+        <button class="tab-btn" data-category="haircut">Стрижки</button>
+        <button class="tab-btn" data-category="beard">Борода и бритье</button>
+        <button class="tab-btn" data-category="combo">Комплексы</button>
+        <button class="tab-btn" data-category="care">Уход и SPA</button>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-item" data-category="haircut">
+          <div class="service-info">
+            <div class="service-title-row">
+              <h4 class="service-title">Мужская стрижка</h4>
+              <span class="service-tag-badge">ТОП</span>
+            </div>
+            <p class="service-desc">Мытье головы до и после, подбор формы с учетом геометрии лица, стрижка ножницами и машинкой, укладка стайлингом.</p>
+            <div class="service-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 45-60 мин</span>
+              <span>Мастер / Старший барбер</span>
+            </div>
+          </div>
+          <div class="service-price-col">
+            <div class="service-price">1 400 ₽</div>
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Выбрать</a>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-item" data-category="beard">
+          <div class="service-info">
+            <div class="service-title-row">
+              <h4 class="service-title">Моделирование бороды</h4>
+            </div>
+            <p class="service-desc">Подбор формы бороды и усов, распаривание горячим полотенцем с эфирными маслами, четкие контуры бритвой, уход с бальзамом.</p>
+            <div class="service-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 40 мин</span>
+              <span>Косметика Proraso</span>
+            </div>
+          </div>
+          <div class="service-price-col">
+            <div class="service-price">1 000 ₽</div>
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Выбрать</a>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-item" data-category="combo">
+          <div class="service-info">
+            <div class="service-title-row">
+              <h4 class="service-title">Стрижка + Борода</h4>
+              <span class="service-tag-badge">ХИТ</span>
+            </div>
+            <p class="service-desc">Полный комплекс преображения: стрижка волос, оформление бороды и усов, распаривание, мытье и укладка.</p>
+            <div class="service-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 80 мин</span>
+              <span>Выгода 400 ₽</span>
+            </div>
+          </div>
+          <div class="service-price-col">
+            <div class="service-price">2 200 ₽</div>
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Выбрать</a>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-item" data-category="beard">
+          <div class="service-info">
+            <div class="service-title-row">
+              <h4 class="service-title">Королевское бритье</h4>
+            </div>
+            <p class="service-desc">Традиционное бритье опасной бритвой. Двойное распаривание, массаж лица, охлаждающий компресс и одеколон.</p>
+            <div class="service-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 45 мин</span>
+              <span>Классика</span>
+            </div>
+          </div>
+          <div class="service-price-col">
+            <div class="service-price">1 300 ₽</div>
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Выбрать</a>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-item" data-category="haircut">
+          <div class="service-info">
+            <div class="service-title-row">
+              <h4 class="service-title">Детская стрижка (до 12 лет)</h4>
+            </div>
+            <p class="service-desc">Стильная стрижка для юного джентльмена с учетом структуры волос. Мастер найдет подход к любому непоседе.</p>
+            <div class="service-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 40 мин</span>
+              <span>Комфорт и забота</span>
+            </div>
+          </div>
+          <div class="service-price-col">
+            <div class="service-price">1 100 ₽</div>
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Выбрать</a>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-item" data-category="combo">
+          <div class="service-info">
+            <div class="service-title-row">
+              <h4 class="service-title">Отец + Сын</h4>
+            </div>
+            <p class="service-desc">Две одновременные мужские стрижки. Семейная традиция с отличным настроением и напитками.</p>
+            <div class="service-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 60 мин</span>
+              <span>Выгода 500 ₽</span>
+            </div>
+          </div>
+          <div class="service-price-col">
+            <div class="service-price">2 300 ₽</div>
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Выбрать</a>
+          </div>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="service-item" data-category="care">
+          <div class="service-info">
+            <div class="service-title-row">
+              <h4 class="service-title">Камуфляж седины</h4>
+            </div>
+            <p class="service-desc">Естественное тонирование волос или бороды. Скрывает седину за 15 минут, без эффекта окрашивания.</p>
+            <div class="service-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 25 мин</span>
+              <span>American Crew</span>
+            </div>
+          </div>
+          <div class="service-price-col">
+            <div class="service-price">900 ₽</div>
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Выбрать</a>
+          </div>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="service-item" data-category="care">
+          <div class="service-info">
+            <div class="service-title-row">
+              <h4 class="service-title">Черная SPA-маска + Воск</h4>
+            </div>
+            <p class="service-desc">Глубокое очищение пор, удаление черных точек и удаление нежелательных волос воском (нос/уши/межбровье).</p>
+            <div class="service-meta">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> 30 мин</span>
+              <span>SPA-уход</span>
+            </div>
+          </div>
+          <div class="service-price-col">
+            <div class="service-price">800 ₽</div>
+            <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Выбрать</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MASTERS / BARBERS TEAM
+       ========================================================================== -->
+  <section id="masters">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Команда</div>
+        <h2 class="section-title">Мастера барбершопа</h2>
+        <p class="section-subtitle">Профессионалы с многолетним стажем, знающие все тонкости мужского стиля</p>
+      </div>
+
+      <div class="masters-grid">
+        <!-- Master 1 -->
+        <div class="master-card">
+          <div class="master-img-box">
+            <img src="assets/images/barber_volkov.jpg" alt="Александр Волков">
+            <span class="master-badge-exp">Стаж 9 лет</span>
+          </div>
+          <div class="master-content">
+            <h3 class="master-name">Александр «Razor» Волков</h3>
+            <p class="master-role">Шеф-барбер & Основатель</p>
+            <div class="master-skills">
+              <span class="skill-tag">Fade любой сложности</span>
+              <span class="skill-tag">Королевское бритье</span>
+              <span class="skill-tag">Сложная геометрия</span>
+            </div>
+            <div class="master-btn-wrap">
+              <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">Записаться к Александру</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Master 2 -->
+        <div class="master-card">
+          <div class="master-img-box">
+            <img src="assets/images/barber_morozov.jpg" alt="Дмитрий Морозов">
+            <span class="master-badge-exp">Стаж 6 лет</span>
+          </div>
+          <div class="master-content">
+            <h3 class="master-name">Дмитрий Морозов</h3>
+            <p class="master-role">Senior Barber</p>
+            <div class="master-skills">
+              <span class="skill-tag">Удлиненные стрижки</span>
+              <span class="skill-tag">Текстура & Crop</span>
+              <span class="skill-tag">Моделирование бороды</span>
+            </div>
+            <div class="master-btn-wrap">
+              <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">Записаться к Дмитрию</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Master 3 -->
+        <div class="master-card">
+          <div class="master-img-box">
+            <img src="assets/images/barber_ilya.jpg" alt="Илья Ковалёв">
+            <span class="master-badge-exp">Стаж 4 года</span>
+          </div>
+          <div class="master-content">
+            <h3 class="master-name">Илья Ковалёв</h3>
+            <p class="master-role">Top Barber & Colorist</p>
+            <div class="master-skills">
+              <span class="skill-tag">Камуфляж седины</span>
+              <span class="skill-tag">Skin Fade</span>
+              <span class="skill-tag">Опасное бритье</span>
+            </div>
+            <div class="master-btn-wrap">
+              <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-outline" style="width: 100%;">Записаться к Илье</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PORTFOLIO & BEFORE/AFTER SLIDER
+       ========================================================================== -->
+  <section id="portfolio" style="background: rgba(16, 21, 34, 0.4);">
+    <div class="container">
+      <div class="portfolio-header-box">
+        <div>
+          <div class="section-tag">Галерея</div>
+          <h2 class="section-title" style="margin-bottom: 0;">Портфолио стрижек</h2>
+        </div>
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">Все работы</button>
+          <button class="filter-btn" data-filter="fade">Fade</button>
+          <button class="filter-btn" data-filter="beard">Борода</button>
+          <button class="filter-btn" data-filter="classic">Классика</button>
+        </div>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card" data-style="fade">
+          <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" alt="Low Fade Cut">
+          <div class="portfolio-overlay">
+            <h4>Low Skin Fade & Texture</h4>
+            <p>Мастер: Александр Волков</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-style="beard">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Beard trim">
+          <div class="portfolio-overlay">
+            <h4>Четкие контуры и борода</h4>
+            <p>Мастер: Дмитрий Морозов</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-style="classic">
+          <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=800&q=80" alt="Side Part Classic">
+          <div class="portfolio-overlay">
+            <h4>Side Part & Pompadour</h4>
+            <p>Мастер: Александр Волков</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-style="fade">
+          <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=800&q=80" alt="Textured Crop">
+          <div class="portfolio-overlay">
+            <h4>French Crop с переходами</h4>
+            <p>Мастер: Илья Ковалёв</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Before / After Interactive Slider (Man Before / Man After) -->
+      <div class="before-after-container">
+        <div>
+          <div class="section-tag" style="margin-bottom: 12px;">Сравнение</div>
+          <h3 style="font-size: 1.85rem; margin-bottom: 16px;">Преображение До / После</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 24px; line-height: 1.6;">
+            Потяните бегунок вправо или влево, чтобы оценить, как меняется мужской образ после комплексной стрижки и оформления бороды в барбершопе «Остряк».
+          </p>
+          <div style="display: flex; gap: 16px; margin-bottom: 24px;">
+            <div>
+              <span style="font-size: 1.5rem; font-weight: 800; color: var(--accent-gold); font-family: var(--font-heading);">1 час</span>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">Время работы</p>
+            </div>
+            <div style="border-left: 1px solid var(--border-subtle); padding-left: 16px;">
+              <span style="font-size: 1.5rem; font-weight: 800; color: var(--accent-gold); font-family: var(--font-heading);">100%</span>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">Уверенность в себе</p>
+            </div>
+          </div>
+          <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary">Хочу такой же результат</a>
+        </div>
+
+        <div class="ba-slider-box" id="baSliderBox">
+          <!-- BEFORE: Overgrown/Unstyled man -->
+          <img class="ba-slider-img" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=900&q=80" alt="Мужчина до стрижки (Отросшие волосы)">
+          <span class="ba-badge before">ДО</span>
+
+          <!-- AFTER: Styled trimmed man -->
+          <div class="ba-img-after-box" id="baAfterBox">
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80" alt="Мужчина после стрижки (Стильный фейд и борода)">
+            <span class="ba-badge after">ПОСЛЕ</span>
+          </div>
+
+          <!-- Slider Handle -->
+          <div class="ba-handle" id="baHandle">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline><polyline points="9 18 3 12 9 6" style="display:none"></polyline></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       ATMOSPHERE & INTERIOR
+       ========================================================================== -->
+  <section id="interior">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Пространство</div>
+        <h2 class="section-title">Атмосфера и интерьер</h2>
+        <p class="section-subtitle">Место в Ижевске, где можно расслабиться, пообщаться, выпить кофе или виски и зарядиться энергией</p>
+      </div>
+
+      <div class="interior-grid">
+        <div class="interior-item span-7">
+          <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200&q=80" alt="Рабочие места барберов">
+          <div class="interior-caption">
+            <h4>Премиальные кожаные кресла и лофт</h4>
+            <p>Эргономика и комфорт на каждом этапе стрижки</p>
+          </div>
+        </div>
+
+        <div class="interior-item span-5">
+          <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=80" alt="Лаунж-бар">
+          <div class="interior-caption">
+            <h4>Барная зона и зона ожидания</h4>
+            <p>Свежесваренный кофе, напитки и PlayStation 5</p>
+          </div>
+        </div>
+
+        <div class="interior-item span-4">
+          <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Косметика и инструменты">
+          <div class="interior-caption">
+            <h4>Инструменты и уход</h4>
+            <p>Proraso, Reuzel, Morgan's Pomade</p>
+          </div>
+        </div>
+
+        <div class="interior-item span-8">
+          <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1200&q=80" alt="Процесс стрижки">
+          <div class="interior-caption">
+            <h4>Внимание к мельчайшим деталям</h4>
+            <p>Идеальная окантовка и распаривание полотенцами</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       REVIEWS / TESTIMONIALS
+       ========================================================================== -->
+  <section id="reviews" style="background: rgba(16, 21, 34, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Отзывы</div>
+        <h2 class="section-title">Что говорят наши гости</h2>
+        <p class="section-subtitle">Реальные отзывы гостей из Яндекс Карт, 2ГИС и группы ВКонтакте</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">«Хожу в Остряк на Пушкинской уже второй год. Всегда идеальный фейд и ровная борода. Крутая атмосфера, играет качественная музыка, угощают отличным кофе. Однозначно лучший барбершоп в Ижевске!»</p>
+          </div>
+          <div class="review-author-row">
+            <div class="author-info">
+              <h5>Михаил Смирнов</h5>
+              <p>Постоянный гость • 2ГИС Ижевск</p>
+            </div>
+            <span class="review-source-tag">2ГИС 5.0</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">«Привели сына 7 лет на стрижку в филиал на Петрова. Ребенок в восторге, сидел спокойно, сделали крутой кроп. Очень вежливый персонал и классный подход к детям!»</p>
+          </div>
+          <div class="review-author-row">
+            <div class="author-info">
+              <h5>Елена и Артём</h5>
+              <p>Тариф «Отец + Сын» • Яндекс Ижевск</p>
+            </div>
+            <span class="review-source-tag">Яндекс 5.0</span>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">«Записался через Yclients по акции на первый визит со скидкой 20% на Максима Горького. Мастер сделал королевское бритье и стрижку. Ощущения просто топ, распаривание с мятой очень расслабляет!»</p>
+          </div>
+          <div class="review-author-row">
+            <div class="author-info">
+              <h5>Константин В.</h5>
+              <p>VK Отзыв • Ижевск</p>
+            </div>
+            <span class="review-source-tag">VK 5.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ SECTION
+       ========================================================================== -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">FAQ</div>
+        <h2 class="section-title">Часто задаваемые вопросы</h2>
+        <p class="section-subtitle">Все, что нужно знать перед первым визитом в «Остряк»</p>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="faq-item active">
+          <div class="faq-question">
+            <h4>Нужно ли записываться заранее или можно прийти без записи?</h4>
+            <div class="faq-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            Мы рекомендуем записываться заранее через онлайн-форму Yclients или по телефону в любой из 6 филиалов в Ижевске, чтобы гарантированно занять удобное время.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Какую косметику и средства вы используете?</h4>
+            <div class="faq-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            Во всех филиалах мы работаем исключительно на сертифицированной профессиональной мужской косметике премиум-класса: Proraso (Италия), Reuzel (Нидерланды), Morgan's Pomade (Великобритания) и American Crew (США).
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Сколько по времени длится комплекс «Стрижка + Борода»?</h4>
+            <div class="faq-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            В среднем комплекс занимает от 60 до 80 минут. В это время входит мытье головы, детальная стрижка, распаривание горячими компрессами, оформление бороды и финишная укладка.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Есть ли парковка рядом с филиалами?</h4>
+            <div class="faq-icon">▼</div>
+          </div>
+          <div class="faq-answer">
+            Да, возле всех 6 филиалов в Ижевске предусмотрены удобные парковочные места для наших гостей.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CONTACTS & MAP SECTION
+       ========================================================================== -->
+  <section id="contacts" style="background: rgba(16, 21, 34, 0.4);">
+    <div class="container">
+      <div class="contacts-grid">
+        <div class="contacts-info-col">
+          <div>
+            <div class="section-tag">Локации</div>
+            <h2 class="section-title" style="margin-bottom: 24px;">Контакты и адреса в Ижевске</h2>
+
+            <div class="contact-item-row" style="margin-bottom: 16px;">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-detail">
+                <h5>6 филиалов в Ижевске</h5>
+                <p style="font-size: 0.95rem; line-height: 1.5; font-weight: 500; color: #e2e8f0;">
+                  • ул. Петрова, д. 5<br>
+                  • ул. Василия Тарасова, д. 1<br>
+                  • ул. Максима Горького, д. 183<br>
+                  • ул. Молодёжная, д. 56А<br>
+                  • ул. Пушкинская, д. 279А<br>
+                  • ул. Пушкинская, д. 169
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item-row">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div class="contact-detail">
+                <h5>Режим работы</h5>
+                <p>Ежедневно с 10:00 до 21:00 во всех филиалах</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div style="margin-bottom: 20px;">
+              <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">Выбрать филиал в Yclients →</a>
+            </div>
+
+            <h5 style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; margin-bottom: 10px;">Мы в соцсетях</h5>
+            <div class="socials-row">
+              <a href="https://vk.ru/ostryak.barbershop?from=groups" target="_blank" rel="noopener" class="social-btn" title="Группа ВКонтакте">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.162 18.994c.609 0 .858-.406.851-.915-.072-3.877 1.84-4.872 2.766-3.837.95 1.056 1.48 2.054 2.221 2.923.633.743 1.25.929 2.016.929h2.981c.71 0 1.077-.384.872-1.127-.247-.899-1.393-2.617-2.73-4.145-1.107-1.268-1.579-1.637-.621-2.915 2.126-2.837 3.327-4.992 3.123-5.698-.225-.776-1.161-.63-1.688-.63h-3.238c-.524 0-.829.231-.994.673-.974 2.589-2.28 4.887-3.208 5.085-.152.032-.303-.049-.303-.438V6.529c0-.683-.198-.992-.767-.992H9.866c-.426 0-.68.324-.68.629 0 .647.968.796 1.066 2.617v3.953c0 .866-.157 1.022-.501 1.022-.916 0-3.141-3.376-4.46-7.234-.257-.754-.52-1.059-1.28-1.059H1.472C.674 5.465.5 5.84.5 6.223c0 .71.908 4.237 4.225 8.887 2.212 3.1 5.32 4.784 8.437 4.784z"/></svg>
+              </a>
+              <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="social-btn" title="Yclients Онлайн Запись">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 4h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-col">
+          <!-- Stylized Yandex Map Embed for Izhevsk -->
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=53.2048%2C56.8498&z=12" allowfullscreen="true" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="logo">
+          <img src="assets/images/logo.png" alt="Остряк Барбершоп" class="logo-img">
+        </a>
+
+        <div style="display: flex; gap: 24px; flex-wrap: wrap;">
+          <a href="#branches" style="color: var(--text-secondary); text-decoration: none;">Филиалы</a>
+          <a href="#services" style="color: var(--text-secondary); text-decoration: none;">Услуги</a>
+          <a href="#promos" style="color: var(--text-secondary); text-decoration: none;">Акции</a>
+          <a href="#masters" style="color: var(--text-secondary); text-decoration: none;">Мастера</a>
+          <a href="#portfolio" style="color: var(--text-secondary); text-decoration: none;">Портфолио</a>
+          <a href="#contacts" style="color: var(--text-secondary); text-decoration: none;">Контакты</a>
+        </div>
+
+        <div>
+          <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Онлайн-запись Yclients</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Сеть барбершопов «ОСТРЯК» (г. Ижевск). Все права защищены.</p>
+        <p style="font-size: 0.8rem;">Дизайн и разработка по стандарту UI/UX Pro Max</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
