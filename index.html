@@ -20,6 +20,38 @@
   <!-- Mobile Nav Backdrop -->
   <div class="nav-backdrop" id="navBackdrop"></div>
 
+  <!-- Mobile Nav Drawer -->
+  <nav class="nav-links" id="navLinks">
+    <div class="nav-mobile-header">
+      <img src="assets/images/logo.png" alt="Остряк" style="height: 38px; width: auto; object-fit: contain;">
+      <button class="nav-close-btn" id="navCloseBtn" aria-label="Закрыть меню">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+
+    <ul class="nav-menu-list">
+      <li><a href="#branches" class="nav-link">Филиалы (6)</a></li>
+      <li><a href="#services" class="nav-link">Услуги и Прайс</a></li>
+      <li><a href="#promos" class="nav-link">Акции</a></li>
+      <li><a href="#masters" class="nav-link">Мастера</a></li>
+      <li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+      <li><a href="#interior" class="nav-link">Интерьер</a></li>
+      <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+      <li><a href="#contacts" class="nav-link">Контакты</a></li>
+    </ul>
+
+    <div class="nav-mobile-footer">
+      <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">
+        <span>Онлайн-запись Yclients</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <div class="nav-mobile-status">
+        <span class="status-dot"></span>
+        <span>Ижевск • 6 филиалов (10:00 - 21:00)</span>
+      </div>
+    </div>
+  </nav>
+
   <!-- ==========================================================================
        HEADER
        ========================================================================== -->
@@ -29,14 +61,8 @@
         <img src="assets/images/logo.png" alt="Остряк Барбершоп Логотип" class="logo-img">
       </a>
 
-      <div class="nav-links" id="navLinks">
-        <div class="nav-mobile-header">
-          <img src="assets/images/logo.png" alt="Остряк" style="height: 38px; width: auto; object-fit: contain;">
-          <button class="nav-close-btn" id="navCloseBtn" aria-label="Закрыть меню">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-          </button>
-        </div>
-
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Основная навигация">
         <ul class="nav-menu-list">
           <li><a href="#branches" class="nav-link">Филиалы (6)</a></li>
           <li><a href="#services" class="nav-link">Услуги и Прайс</a></li>
@@ -47,18 +73,7 @@
           <li><a href="#reviews" class="nav-link">Отзывы</a></li>
           <li><a href="#contacts" class="nav-link">Контакты</a></li>
         </ul>
-
-        <div class="nav-mobile-footer">
-          <a href="https://b802634.yclients.com/select-city/235/select-branch?o=" target="_blank" rel="noopener" class="btn btn-primary" style="width: 100%;">
-            <span>Онлайн-запись Yclients</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <div class="nav-mobile-status">
-            <span class="status-dot"></span>
-            <span>Ижевск • 6 филиалов (10:00 - 21:00)</span>
-          </div>
-        </div>
-      </div>
+      </nav>
 
       <div class="header-actions">
         <div class="header-status">
