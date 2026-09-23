@@ -251,12 +251,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-  });
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
 
   // Step Navigation
   function setWizardStep(step) {
